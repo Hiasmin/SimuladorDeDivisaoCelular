@@ -1,13 +1,12 @@
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
     </head>
     <body>
-        c√©lula para clicar
+        cÈlula para clicar
         <br/>
         <br/>
         <a href="simulador.jsp" target="_top"><div>SIMULADOR</div></a>

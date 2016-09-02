@@ -4,12 +4,12 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="dao.GlossarioDAO"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
         <style>
             .texto{margin-right:200px;                
                    margin-left:200px;
@@ -30,7 +30,7 @@
     </head>
     <body>
         <div class="titulo" style="color:red">
-            <u><b>GLOSS√ÅRIO:</b></u>
+            <u><b>GLOSS¡RIO:</b></u>
         </div>
         <br/>
         <br/>
@@ -98,10 +98,10 @@
         <div class="subtitulo"><u><b>Fontes:</b></u></div>
         <br/>
         <div class="texto">
-            AMABIS, JOS√â MARIANO; MARTHO, GILBERTO RODRIGUES. <b>Fundamentos da Biologia Moderna</b>. 4¬™ ed. S√£o Paulo: Editora Moderna, 839 p., 2006.
+            AMABIS, JOS… MARIANO; MARTHO, GILBERTO RODRIGUES. <b>Fundamentos da Biologia Moderna</b>. 4™ ed. S„o Paulo: Editora Moderna, 839 p., 2006.
             <br/>
             <br/>
-            ** AMABIS, JOS√â MARIANO; MARTHO, GILBERTO RODRIGUES. <b>Biologia em contexto: 1 do universo √†s c√©lulas vivas</b>. S√£o Paulo: Editora Moderna, 360 p., 2013.
+            ** AMABIS, JOS… MARIANO; MARTHO, GILBERTO RODRIGUES. <b>Biologia em contexto: 1 do universo ‡s cÈlulas vivas</b>. S„o Paulo: Editora Moderna, 360 p., 2013.
             <br/>
             <br/>
             * MADIGAN, MICHAEL T.; MARTINKO, JOHN M.; DUNLAP, PAUL V.; CLARK, DAVID P. <b>Microbiologia de Brock</b>. Porto Alegre: Artmed, 1128 p., 2010.       	

@@ -52,12 +52,11 @@
 
 %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
 
         <style type="text/css">
             .fotos{width:500px}		
@@ -67,14 +66,14 @@
 
     </head>
     <body>
-        <div style="text-align:right"><a href="glossario.jsp" target="_blank">Gloss√°rio</a></div>    
+        <div style="text-align:right"><a href="glossario.jsp" target="_blank">Gloss·rio</a></div>    
         <br/>
         <div style="text-align:right"><a href="biblioteca.jsp" target="_blank">Biblioteca</a></div>  
         <div style="text-align:center;">
         <form name="formCro" action="simulador.jsp" method="post" >
-            <h1><u>Simulador de divis√£o celular:</u></h1>            
-            <h6 style="font-size:20px;"><u>N√∫mero de cromossomos: 2, 4, 6, 8, 10, 20, 30, 40 e 46.</u></h6>
-            <div style="font-size:20px;">Selecione o n√∫mero de cromossomos desejado e veja algumas esp√©cies que o possuem:</div>
+            <h1><u>Simulador de divis„o celular:</u></h1>            
+            <h6 style="font-size:20px;"><u>N˙mero de cromossomos: 2, 4, 6, 8, 10, 20, 30, 40 e 46.</u></h6>
+            <div style="font-size:20px;">Selecione o n˙mero de cromossomos desejado e veja algumas espÈcies que o possuem:</div>
             <br/>
             <select name="numCrom">
                 <option value="Selecione">Selecione</option>  
@@ -89,7 +88,7 @@
                 <option value="46">46</option>
             </select>
             <br/><br/>
-            <input type="submit" value="Ver esp√©cies">
+            <input type="submit" value="Ver espÈcies">
             <br/><br/>        
         </form>
         <%  
@@ -100,17 +99,17 @@
         } else {
             if (nc.equals("2")) {
                 %>
-                <h3>Algumas esp√©cies com 2 cromossomos: </h3>
-                <h4>√Åcaro haploide <i>(Brevipalpus phoenicis)</i></h4>
+                <h3>Algumas espÈcies com 2 cromossomos: </h3>
+                <h4>¡caro haploide <i>(Brevipalpus phoenicis)</i></h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b> NOVELLI, V. M.; FREITAS-AST√öA, J.; ARRIVABEM, F.; LOCALI, E. C.; HILF, M. E.; 
-                    GOTTWALD, T. R.; MACHADO, M. A. O √°caro vetor da leprose dos citros e a intera√ß√£o com 
-                    endossimbiontes. <i>Laranja</i>, Cordeir√≥polis, v. 26, n. 2, p. 273-289, 2005. 
+                    <b>Fonte texto: </b> NOVELLI, V. M.; FREITAS-AST⁄A, J.; ARRIVABEM, F.; LOCALI, E. C.; HILF, M. E.; 
+                    GOTTWALD, T. R.; MACHADO, M. A. O ·caro vetor da leprose dos citros e a interaÁ„o com 
+                    endossimbiontes. <i>Laranja</i>, CordeirÛpolis, v. 26, n. 2, p. 273-289, 2005. 
                 <br/>
-                <b>Dispon√≠vel em: </b> <a target="_blank" href="http://revistalaranja.centrodecitricultura.br/edicoes/8/13/v26%20n2%20art06%20O%20%E1caro.pdf">
+                <b>DisponÌvel em: </b> <a target="_blank" href="http://revistalaranja.centrodecitricultura.br/edicoes/8/13/v26%20n2%20art06%20O%20%E1caro.pdf">
                     < http://revistalaranja.centrodecitricultura.br/edicoes/8/13/v26%20n2%20art06%20O%20%E1caro.pdf ></a>.
                 Acesso em: 24 fev. 2016. 
                 <br/>
@@ -119,14 +118,14 @@
                 </div>
                 <br/><br/>
                 
-                <h4>Formiga australiana (f√™mea diploide - <i>Myrmecia pilosula)</i></h4>
+                <h4>Formiga australiana (fÍmea diploide - <i>Myrmecia pilosula)</i></h4>
                 <img class="fotos" src="<%=foto2%>">
                 
                 <br/>
                 <div class="fontes">
                     <b>Fonte texto: </b>ROSLAND, M. W. J.; CROZIER, R. H. <i>Myrmecia pilosula</i>, an Ant with Only One Pair of Chromosomes. 
                     <i>Science</i>, v. 231, n. 4743, p. 1278, 1986.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://science.sciencemag.org/content/231/4743/1278">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://science.sciencemag.org/content/231/4743/1278">
                     < http://science.sciencemag.org/content/231/4743/1278 ></a>. Acesso em: 24 fev. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="http://topicstock.pantip.com/wahkor/topicstock/2009/04/X7709860/X7709860.html" target="_blank">
@@ -135,30 +134,30 @@
                 <br/><br/>
                 
                 <div style="text-align:center;">
-                    <h3>SIMULADOR DE DIVIS√ÉO CELULAR:</h3>
+                    <h3>SIMULADOR DE DIVIS√O CELULAR:</h3>
                     <img class="fotos" src="<%=sim1%>">
                     <div class="legenda">
-                        Final da Int√©rfase e In√≠cio da Pr√≥fase
+                        Final da IntÈrfase e InÌcio da PrÛfase
                     </div>
                     <br/><br/>
                     <img class="fotos" src="<%=sim2%>">
                     <div class="legenda">
-                        Pr√≥fase
+                        PrÛfase
                     </div>
                     <br/><br/>
                     <img class="fotos" src="<%=sim3%>">
                     <div class="legenda">
-                        Met√°fase
+                        Met·fase
                     </div>
                     <br/><br/>
                     <img class="fotos" src="<%=sim4%>">
                     <div class="legenda">
-                        An√°fase
+                        An·fase
                     </div>
                     <br/><br/>
                     <img class="fotos" src="<%=sim5%>">
                     <div class="legenda">
-                        Tel√≥fase
+                        TelÛfase
                     </div>
                     <br/><br/>
                     <img class="fotos" src="<%=sim6%>">
@@ -168,7 +167,7 @@
                     <br/><br/>
                     <img class="fotos" src="<%=sim7%>">
                     <div class="legenda">
-                        Final da Divis√£o Celular
+                        Final da Divis„o Celular
                     </div>                    
                     <br/><br/>
                 </div>
@@ -177,7 +176,7 @@
                 <%
             } else if (nc.equals("4")){
                 %>
-                <h3>Algumas esp√©cies com 4 cromossomos: </h3>
+                <h3>Algumas espÈcies com 4 cromossomos: </h3>
                 <h4>Planta <i>(Haplopappus gracilis)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
@@ -185,7 +184,7 @@
                 <div class="fontes">
                     <b>Fonte texto: </b>TANAKA, R. A Comparative Karyotype Analysis in <i>Haplopappus gracilis</i> (2n=4) and H. ravenii (2n=8).  
                     <i>Cytologia</i>, v. 32, n. 3-4, p 542-552, 1967. 
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="https://www.jstage.jst.go.jp/article/cytologia1929/32/3-4/32_3-4_542/_pdf">
+                <b> DisponÌvel em: </b> <a target="_blank" href="https://www.jstage.jst.go.jp/article/cytologia1929/32/3-4/32_3-4_542/_pdf">
                    < https://www.jstage.jst.go.jp/article/cytologia1929/32/3-4/32_3-4_542/_pdf ></a>. Acesso em: 24 fev. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://www.flickr.com/photos/39039456@N07/17334384843" target="_blank">
@@ -198,9 +197,9 @@
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>F√ÑRBER, P, GEISEN, R. Karyotype of <i>Penicillium nalgiovense</i> and assignment of the penicillin biosynthetic 
-                    genes to chromosome IV. <i>International Journal of Food Microbiology</i>, v. 58, n. 1‚Äì2, p. 59‚Äì63, 2000.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0168160500002798">
+                    <b>Fonte texto: </b>FƒRBER, P, GEISEN, R. Karyotype of <i>Penicillium nalgiovense</i> and assignment of the penicillin biosynthetic 
+                    genes to chromosome IV. <i>International Journal of Food Microbiology</i>, v. 58, n. 1?2, p. 59?63, 2000.
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0168160500002798">
                    < http://www.sciencedirect.com/science/article/pii/S0168160500002798 ></a>. Acesso em: 24 fev. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://de.wikipedia.org/wiki/Trichocomaceae" target="_blank">
@@ -213,7 +212,7 @@
                 
                 <br/>
                 <div class="fontes">
-                    Dispon√≠vel em: </b> <a target="_blank" href="http://www.cienciamao.usp.br/tudo/exibir.php?midia=3bsc&cod=_divisaocelularmitoseemei&action=print">
+                    DisponÌvel em: </b> <a target="_blank" href="http://www.cienciamao.usp.br/tudo/exibir.php?midia=3bsc&cod=_divisaocelularmitoseemei&action=print">
                    < http://www.cienciamao.usp.br/tudo/exibir.php?midia=3bsc&cod=_divisaocelularmitoseemei&action=print ></a>  Acesso em: 01 mar. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://en.wikipedia.org/wiki/Ascaris" target="_blank">
@@ -223,27 +222,27 @@
                 <%
             } else if (nc.equals("6")){
                 %>
-                <h3>Algumas esp√©cies com 6 cromossomos: </h3>
+                <h3>Algumas espÈcies com 6 cromossomos: </h3>
                 <h4>Pernilongo <i>(Culex pipiens)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
                     <b>Fonte texto: </b>SADAVA, D.; HELLER, H. C.; DRIANS, G. H.; PURVES, W. K.; HILLIS, D. M. <i>Vida: 
-                    A Ci√™ncia da Biologia</i>. Volume I: C√©lula e Hereditariedade. 8¬™ ed. Porto Alegre: Artmed, 2009. 461 p. 
+                    A CiÍncia da Biologia</i>. Volume I: CÈlula e Hereditariedade. 8™ ed. Porto Alegre: Artmed, 2009. 461 p. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:CulexPipiensCloseup.jpg" target="_blank">
                     < https://commons.wikimedia.org/wiki/File:CulexPipiensCloseup.jpg ></a>. Acesso em: 06 mar. 2016.
                 </div>
                 
                 <br/><br/>
-                <h4>Mosquito transmissor da mal√°ria <i>(Anopheles gambiae)</i></h4>
+                <h4>Mosquito transmissor da mal·ria <i>(Anopheles gambiae)</i></h4>
                 <img class="fotos" src="<%=foto2%>" >
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>CONSOLI, R. A. G. B; OLIVEIRA, R. L. de. Principais mosquitos de import√¢ncia sanit√°ria no Brasil. Rio de Janeiro: Editora FIOCRUZ, 1994, 228 p.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0168160500002798">
+                    <b>Fonte texto: </b>CONSOLI, R. A. G. B; OLIVEIRA, R. L. de. Principais mosquitos de import‚ncia sanit·ria no Brasil. Rio de Janeiro: Editora FIOCRUZ, 1994, 228 p.
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0168160500002798">
                    < http://www.sciencedirect.com/science/article/pii/S0168160500002798 ></a>. Acesso em: 24 fev. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="http://static.scielo.org/scielobooks/th/pdf/consoli-9788575412909.pdf" target="_blank">
@@ -256,9 +255,9 @@
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>CONSOLI, R. A. G. B; OLIVEIRA, R. L. de. Principais mosquitos de import√¢ncia sanit√°ria no Brasil. 
+                    <b>Fonte texto: </b>CONSOLI, R. A. G. B; OLIVEIRA, R. L. de. Principais mosquitos de import‚ncia sanit·ria no Brasil. 
                     Rio de Janeiro: Editora FIOCRUZ, 1994, 228 p.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://static.scielo.org/scielobooks/th/pdf/consoli-9788575412909.pdf">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://static.scielo.org/scielobooks/th/pdf/consoli-9788575412909.pdf">
                    < http://static.scielo.org/scielobooks/th/pdf/consoli-9788575412909.pdf ></a>. Acesso em: 24 fev. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://pt.wikipedia.org/wiki/V%C3%ADrus_Zika" target="_blank">
@@ -268,13 +267,13 @@
                 <%
             }else if (nc.equals("8")){
                 %>
-                <h3>Algumas esp√©cies com 8 cromossomos: </h3>
-                <h4>Dros√≥fila ou mosca da fruta <i>(Drosophila melanogaster)</i> </h4>
+                <h3>Algumas espÈcies com 8 cromossomos: </h3>
+                <h4>DrosÛfila ou mosca da fruta <i>(Drosophila melanogaster)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>AMABIS, J. M.; MARTHO, G. R. <i>Biologia em contexto</i>: 1 do universo √†s c√©lulas vivas. 1¬™ ed. S√£o Paulo: Moderna, 2013. 360 p.
+                    <b>Fonte texto: </b>AMABIS, J. M.; MARTHO, G. R. <i>Biologia em contexto</i>: 1 do universo ‡s cÈlulas vivas. 1™ ed. S„o Paulo: Moderna, 2013. 360 p.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Drosophila_melanogaster_%E2%99%80_Melgen,_1830,_Drosera_capensis_Linnaeus,_1753_1100.1.2175.jpg" target="_blank">
                     < https://commons.wikimedia.org/wiki/File:Drosophila_melanogaster_%E2%99%80_Melgen,_
@@ -287,10 +286,10 @@
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>Nascimento, A. C. M. de O. B. Susceptibilidade antif√∫ngica, produ√ß√£o de biofilme e caracteriza√ß√£o do
-                    gene ALS3 em isolados de <i>Candida albicans</i> e n√£o-<i>albicans</i> do Hospital das Cl√≠nicas, UNESP, Botucatu. 2009. 54p. Disserta√ß√£o 
-                    (Mestrado em Biologia Geral e Aplicada) ‚Äì Instituto de Bioci√™ncias, Universidade Estadual Paulista, S√£o Paulo. 2009.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.ibb.unesp.br/posgrad/teses/bga_me_2009_ariane_nascimento.pdf">
+                    <b>Fonte texto: </b>Nascimento, A. C. M. de O. B. Susceptibilidade antif˙ngica, produÁ„o de biofilme e caracterizaÁ„o do
+                    gene ALS3 em isolados de <i>Candida albicans</i> e n„o-<i>albicans</i> do Hospital das ClÌnicas, UNESP, Botucatu. 2009. 54p. DissertaÁ„o 
+                    (Mestrado em Biologia Geral e Aplicada) ? Instituto de BiociÍncias, Universidade Estadual Paulista, S„o Paulo. 2009.
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.ibb.unesp.br/posgrad/teses/bga_me_2009_ariane_nascimento.pdf">
                    < http://www.ibb.unesp.br/posgrad/teses/bga_me_2009_ariane_nascimento.pdf ></a>. Acesso em: 24 fev. 2016.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Candida_albicans_(248_35).jpg" target="_blank">
@@ -298,18 +297,18 @@
                 </div>
                 
                 <br/><br/>
-                <h4>Mosquito <i>(Chagasia bathana)</i> - Imagem ainda n√£o encontrada</h4>
+                <h4>Mosquito <i>(Chagasia bathana)</i> - Imagem ainda n„o encontrada</h4>
                 <%
             }else if (nc.equals("10")){
                 %>
-                <h3>Algumas esp√©cies com 10 cromossomos: </h3>
+                <h3>Algumas espÈcies com 10 cromossomos: </h3>
                 <h4>Mostarda <i>(Arabidopsis thaliana)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>KLUG, W. S.; CUMMINGS, M. R.; SPENCER, C. A.; PALLADINO, M. A. <i>Conceitos de Gen√©tica</i>. 9¬™ ed. Porto Alegre: Artemed, 2010. p. 23.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="https://books.google.com.br/books?id=4LAp7ih7_rcC&pg=PA23&dq=musca+domestica+numero+de+cromossomos&hl=pt-BR&sa=X&ei=4ZsMVZzOJs2xsATO5IHwDg&ved=0CB0Q6AEwAA#v=onepage&q=musca%20domestica%20numero%20de%20cromossomos&f=false">
+                    <b>Fonte texto: </b>KLUG, W. S.; CUMMINGS, M. R.; SPENCER, C. A.; PALLADINO, M. A. <i>Conceitos de GenÈtica</i>. 9™ ed. Porto Alegre: Artemed, 2010. p. 23.
+                <b> DisponÌvel em: </b> <a target="_blank" href="https://books.google.com.br/books?id=4LAp7ih7_rcC&pg=PA23&dq=musca+domestica+numero+de+cromossomos&hl=pt-BR&sa=X&ei=4ZsMVZzOJs2xsATO5IHwDg&ved=0CB0Q6AEwAA#v=onepage&q=musca%20domestica%20numero%20de%20cromossomos&f=false">
                    < https://books.google.com.br/books?id=4LAp7ih7_rcC&pg=PA23&dq=musca+domestica+
                    numero+de+cromossomos&hl=pt-BR&sa=X&ei=4ZsMVZzOJs2xsATO5IHwDg&ved=0CB0Q6AEwAA#v=
                    onepage&q=musca%20domestica%20numero%20de%20cromossomos&f=false ></a>. Acesso em: 01 mar. 2016.
@@ -319,7 +318,7 @@
                 </div>
                 
                 <br/><br/>
-                <h4>Canguru f√™mea <i>(Wallabia bicolor)</i></h4>
+                <h4>Canguru fÍmea <i>(Wallabia bicolor)</i></h4>
                 <img class="fotos" src="<%=foto2%>" >
                 
                 <br/>
@@ -333,12 +332,12 @@
                 </div>
                 
                 <br/><br/>
-                <h4>Protozo√°rio <i>(Giardia lamblia)</i></h4>
+                <h4>Protozo·rio <i>(Giardia lamblia)</i></h4>
                 <img class="fotos" src="<%=foto3%>" >                
                 
                 <br/>
                 <div class="fontes">
-                    <b>Fonte texto: </b>MADIGAN, M. T.; MARTINKO, J. M.; DUNLAP, P. V.; CLARK, D. P. <i>Microbiologia de Brock</i>. 12¬™ ed. Porto Alegre: Artmed, 2010. p. 353.              
+                    <b>Fonte texto: </b>MADIGAN, M. T.; MARTINKO, J. M.; DUNLAP, P. V.; CLARK, D. P. <i>Microbiologia de Brock</i>. 12™ ed. Porto Alegre: Artmed, 2010. p. 353.              
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Giardia_lamblia_cytology.jpg" target="_blank">
                     < https://commons.wikimedia.org/wiki/File:Giardia_lamblia_cytology.jpg ></a>. Acesso em: 06 mar. 2016.
@@ -347,13 +346,13 @@
                 <%
             }else if (nc.equals("20")){
                 %>
-                <h3>Algumas esp√©cies com 20 cromossomos: </h3>
+                <h3>Algumas espÈcies com 20 cromossomos: </h3>
                 <h4>Milho <i>(Zea mays)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >                
                 <br/>
                 <div class="fontes">
                 <b>Fonte texto: </b>AMABIS, J. M.; MARTHO, G. R. <i>Biologia em 
-                contexto</i>: 1 do universo √†s c√©lulas vivas. 1¬™ ed. S√£o Paulo: Moderna, 2013. 360 p.
+                contexto</i>: 1 do universo ‡s cÈlulas vivas. 1™ ed. S„o Paulo: Moderna, 2013. 360 p.
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/Zea_mays" target="_blank">
                     < https://commons.wikimedia.org/wiki/Zea_mays ></a>. Acesso em: 06 mar. 2016.
@@ -366,11 +365,11 @@
                 <br/>
                 <div class="fontes">
                 <b>Fonte texto: </b>YANO, C. Pesquisa facilitada: Chineses
-                descobrem t√©cnica mais eficiente para produzir camundongos de 
-                laborat√≥rio geneticamente modificados. O m√©todo, que usa uma 
-                c√©lula-tronco embrion√°ria em vez de um espermatozoide para
-                fertilizar o √≥vulo, vai facilitar o estudo de v√°rias doen√ßas.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://cienciahoje.uol.com.br/noticias/2012/04/pesquisa-facilitada">
+                descobrem tÈcnica mais eficiente para produzir camundongos de 
+                laboratÛrio geneticamente modificados. O mÈtodo, que usa uma 
+                cÈlula-tronco embrion·ria em vez de um espermatozoide para
+                fertilizar o Ûvulo, vai facilitar o estudo de v·rias doenÁas.
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://cienciahoje.uol.com.br/noticias/2012/04/pesquisa-facilitada">
                    < http://cienciahoje.uol.com.br/noticias/2012/04/pesquisa-facilitada ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://en.wikipedia.org/wiki/Mouse" target="_blank">
@@ -383,9 +382,9 @@
                 
                 <br/>
                 <div class="fontes">
-                <b>Fonte texto: </b>PAVESE, F.; KARSBURG, I. V. Caracteriza√ß√£o 
-                morfom√©trica dos cromossomos de quatro esp√©cies do g√™nero <i>Theobroma</i> L. 
-                In: 2¬™ Jornada Cient√≠fica da Unemat, 2009. Barra dos Bugres. <i>Anais</i>...
+                <b>Fonte texto: </b>PAVESE, F.; KARSBURG, I. V. CaracterizaÁ„o 
+                morfomÈtrica dos cromossomos de quatro espÈcies do gÍnero <i>Theobroma</i> L. 
+                In: 2™ Jornada CientÌfica da Unemat, 2009. Barra dos Bugres. <i>Anais</i>...
                 Barra dos Bugres, 2009.                 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://en.wikipedia.org/wiki/Theobroma_cacao" target="_blank">
@@ -395,17 +394,17 @@
                 <%
             }else if (nc.equals("30")){
                 %>
-                <h3>Algumas esp√©cies com 30 cromossomos: </h3>
+                <h3>Algumas espÈcies com 30 cromossomos: </h3>
                 <h4>Perereca <i>(Dendropsophus sanborni)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
-                <b>Fonte texto: </b>MEDEIROS, L. R. Citogen√©tica de Dendropsophus 
-                (Anura, Hylidae) : caracteriza√ß√µes e compara√ß√µes cromoss√¥micas entre 
-                esp√©cies relacionadas. 2005. 102 f. Tese (Doutorado em Biologia Celular
-                e Estrutural) ‚Äì Instituto de Biologia, Universidade Estadual de S√£o Paulo, S√£o Paulo. 2005. 
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.bibliotecadigital.unicamp.br/document/?code=vtls000374916&fd=y">
+                <b>Fonte texto: </b>MEDEIROS, L. R. CitogenÈtica de Dendropsophus 
+                (Anura, Hylidae) : caracterizaÁıes e comparaÁıes cromossÙmicas entre 
+                espÈcies relacionadas. 2005. 102 f. Tese (Doutorado em Biologia Celular
+                e Estrutural) ? Instituto de Biologia, Universidade Estadual de S„o Paulo, S„o Paulo. 2005. 
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.bibliotecadigital.unicamp.br/document/?code=vtls000374916&fd=y">
                    < http://www.bibliotecadigital.unicamp.br/document/?code=vtls000374916&fd=y ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://ca.wikipedia.org/wiki/Dendropsophus" target="_blank">
@@ -413,7 +412,7 @@
                 </div>
                 
                 <br/><br/>
-                <h4>Linha√ßa <i>(Linum usitatissimum)</i></h4>
+                <h4>LinhaÁa <i>(Linum usitatissimum)</i></h4>
                 <img class="fotos" src="<%=foto2%>" >
                 
                 <br/>
@@ -421,7 +420,7 @@
                 <b>Fonte texto: </b>SAMADI, A.; MAHMODZADEH, A.; GORTTAPEH, 
                 A. H.; TORKAMANI, M. R. Cytogenetic Studies in Four Species of 
                 Flax (<i>Linum</i> spp.). <i>Journal of Applied Sciences</i>, v. 7, n. 19, p.2832-2839, 2007. 
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://scialert.net/fulltext/?doi=jas.2007.2832.2839&org=11">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://scialert.net/fulltext/?doi=jas.2007.2832.2839&org=11">
                    < http://scialert.net/fulltext/?doi=jas.2007.2832.2839&org=11 ></a>. cesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Linum_usitatissimum_003.JPG" target="_blank">
@@ -434,11 +433,11 @@
                 
                 <br/>
                 <div class="fontes">
-                <b>Fonte texto: </b>ÔÉºKingdon, J.; Happold, D.; Butynski, T.; Hoffmann, M.; Happold, M.; Kalina, Jan. 
+                <b>Fonte texto: </b>?Kingdon, J.; Happold, D.; Butynski, T.; Hoffmann, M.; Happold, M.; Kalina, Jan. 
                 <i>Mammals of Africa</i>. Volume I: Introductory Chapters and Afrotheria. Published by London, New Delhi,
                 New York, Sydney: Bloomsbury, 2013. 352 p. 
 
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="https://books.google.com.br/books?id=B_07noCPc4kC&pg=RA5-PA98&lpg=RA5-PA98&dq=giraffa+camelopardalis+tippelskirchi+number+chromosome&source=bl&ots=u2a6SJ_5eF&sig=vNVeAyno3pLMkBqQU9JX0Sm_rDE&hl=pt-BR&sa=X&ved=0ahUKEwj50L3w0qDLAhVKl5AKHVvnA6MQ6AEIHDAA#v=onepage&q=giraffa%20camelopardalis%20tippelskirchi%20number%20chromosome&f=false">
+                <b> DisponÌvel em: </b> <a target="_blank" href="https://books.google.com.br/books?id=B_07noCPc4kC&pg=RA5-PA98&lpg=RA5-PA98&dq=giraffa+camelopardalis+tippelskirchi+number+chromosome&source=bl&ots=u2a6SJ_5eF&sig=vNVeAyno3pLMkBqQU9JX0Sm_rDE&hl=pt-BR&sa=X&ved=0ahUKEwj50L3w0qDLAhVKl5AKHVvnA6MQ6AEIHDAA#v=onepage&q=giraffa%20camelopardalis%20tippelskirchi%20number%20chromosome&f=false">
                    < https://books.google.com.br/books?id=B_07noCPc4kC&pg=RA5-PA98&lpg=RA5-PA98&dq=giraffa+camelopardalis+tippelskirchi+number+chromosome&source=bl&ots=u2a6SJ_5eF&sig=vNVeAyno3pLMkBqQU9JX0Sm_rDE&hl=pt-BR&sa=X&ved=0ahUKEwj50L3w0qDLAhVKl5AKHVvnA6MQ6AEIHDAA#v=onepage&q=giraffa%20camelopardalis%20tippelskirchi%20number%20chromosome&f=false ></a>. Acesso em: 02 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://www.flickr.com/photos/berniedup/7068054987" target="_blank">
@@ -448,14 +447,14 @@
                 <%
             }else if (nc.equals("40")){
                 %>
-                <h3>Algumas esp√©cies com 40 cromossomos: </h3>
+                <h3>Algumas espÈcies com 40 cromossomos: </h3>
                 <h4>Soja <i>(Glycine max)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
                 <b>Fonte texto: </b>AMABIS, J. M.; MARTHO, G. R. <i>Biologia em contexto</i>:
-                1 do universo √†s c√©lulas vivas. 1¬™ ed. S√£o Paulo: Moderna, 2013. 360 p.                
+                1 do universo ‡s cÈlulas vivas. 1™ ed. S„o Paulo: Moderna, 2013. 360 p.                
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Glycine_max-jd_plt_P1160032.JPG" target="_blank">
                     < https://commons.wikimedia.org/wiki/File:Glycine_max-jd_plt_P1160032.JPG ></a>. Acesso em: 06 mar. 2016.
@@ -468,9 +467,9 @@
                 <br/>
                 <div class="fontes">
                 <b>Fonte texto: </b>SERAFIM, H.; PECCININI-SEALE, D. M.; BATISTIC, 
-                R. F. Estudo cariot√≠pico de duas esp√©cies brasileiras do g√™nero <i>Micrurus</i>
-                (Ophidia: Elapidae). <i>Biota Neotr√≥pica</i>, v. 7, n. 1, p. 75-80, 2007.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.scielo.br/pdf/bn/v7n1/09.pdf">
+                R. F. Estudo cariotÌpico de duas espÈcies brasileiras do gÍnero <i>Micrurus</i>
+                (Ophidia: Elapidae). <i>Biota NeotrÛpica</i>, v. 7, n. 1, p. 75-80, 2007.
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.scielo.br/pdf/bn/v7n1/09.pdf">
                    < http://www.scielo.br/pdf/bn/v7n1/09.pdf ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://en.wikipedia.org/wiki/Coral_snake" target="_blank">
@@ -483,10 +482,10 @@
                 
                 <br/>
                 <div class="fontes">
-                <b>Fonte texto: </b>PIEROZZII, N. I.; ROSSETTO, C. J. Caracteriza√ß√£o 
-                cromoss√¥mica de duas variedades de manga. <I>Revista Brasileira de Fruticultura</i>,
+                <b>Fonte texto: </b>PIEROZZII, N. I.; ROSSETTO, C. J. CaracterizaÁ„o 
+                cromossÙmica de duas variedades de manga. <I>Revista Brasileira de Fruticultura</i>,
                 Jaboticabal, v. E, p. 546-551, 2001.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-29452011000500074">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-29452011000500074">
                    < http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-29452011000500074 ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Starr_071024-0216_Mangifera_indica.jpg" target="_blank">
@@ -496,14 +495,14 @@
                 <%
             }else if (nc.equals("46")){
                 %>
-                <h3>Algumas esp√©cies com 46 cromossomos: </h3>
+                <h3>Algumas espÈcies com 46 cromossomos: </h3>
                 <h4>Humanos <i>(Homo sapiens)</i> </h4>
                 <img class="fotos" src="<%=foto1%>" >
                 
                 <br/>
                 <div class="fontes">
                 <b>Fonte texto: </b>AMABIS, J. M.; MARTHO, G. R. <i>Biologia 
-                em contexto</i>: 1 do universo √†s c√©lulas vivas. 1¬™ ed. S√£o Paulo: Moderna, 2013. 360 p.                
+                em contexto</i>: 1 do universo ‡s cÈlulas vivas. 1™ ed. S„o Paulo: Moderna, 2013. 360 p.                
                 <br/>
                 <b>Fonte imagem: </b><a href="https://www.flickr.com/photos/93963757@N05/8551937456" target="_blank">
                     < https://www.flickr.com/photos/93963757@N05/8551937456 ></a>. Acesso em: 06 mar. 2016.
@@ -518,7 +517,7 @@
                 <b>Fonte texto: </b>Wurster, D. H.; Benirschke, K. Indian muntjac, 
                 <i>Muntiacus muntjak</i>: a deer with a low diploid chromosome number. <i>Science</i>,
                 v. 168, n. 3937, p. 1364-1366,1970.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/5444269">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/5444269">
                    < http://www.ncbi.nlm.nih.gov/pubmed/5444269 ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Muntiacus_reevesi_Zoo_Praha_2011-4.jpg" target="_blank">
@@ -531,11 +530,11 @@
                 
                 <br/>
                 <div class="fontes">
-                <b>Fonte texto: </b>ÔÉº	Karata≈üa, A.; S√∂zenb, M. Contribution to
+                <b>Fonte texto: </b>?	Karata?a, A.; Sˆzenb, M. Contribution to
                 karyology, distribution and taxonomic status of the Long-winged Bat, 
                 <i>Miniopterus schreibersii</i> (Chiroptera: Vespertilionidae), in Turkey. 
                 <i>Chiroptera</i>, p. 51-65, 2013.
-                <b> Dispon√≠vel em: </b> <a target="_blank" href="http://www.tandfonline.com/doi/pdf/10.1080/09397140.2004.10638063">
+                <b> DisponÌvel em: </b> <a target="_blank" href="http://www.tandfonline.com/doi/pdf/10.1080/09397140.2004.10638063">
                    < http://www.tandfonline.com/doi/pdf/10.1080/09397140.2004.10638063 ></a>. Acesso em: 01 mar. 2016. 
                 <br/>
                 <b>Fonte imagem: </b><a href="https://commons.wikimedia.org/wiki/File:Miniopterus_scheibersii_01-cropped.jpg" target="_blank">

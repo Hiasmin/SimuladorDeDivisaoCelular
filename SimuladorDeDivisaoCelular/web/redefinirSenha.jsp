@@ -1,14 +1,13 @@
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
     </head>
     <body>
-        <h2>Redefini√ß√£o de Senha</h2>
+        <h2>RedefiniÁ„o de Senha</h2>
         <br/>
         <a href="redefinirSenhaProf.jsp" target="_self">Sou professor</a>
         <br/><br/><br/>

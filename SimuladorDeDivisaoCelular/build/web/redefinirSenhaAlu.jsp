@@ -8,7 +8,7 @@
     AlunoDAO aluDAO = new AlunoDAO();
     List<Aluno> alunos = aluDAO.listar();
     if (alunos.isEmpty()) {
-        msg = "Ainda n√£o h√° nenhum aluno cadastrado";
+        msg = "Ainda n„o h· nenhum aluno cadastrado";
     } else {
         if (request.getParameter("login") != null) {
             for (int y = 0; y < alunos.size(); y++) {
@@ -17,7 +17,7 @@
                     session.setAttribute("Aluno", alu);
                     response.sendRedirect("redefinirSenhaAlu2.jsp");
                 } else {
-                    msg = "Esse login n√£o √© de um aluno ou n√£o existe";
+                    msg = "Esse login n„o È de um aluno ou n„o existe";
                 }
             }
         } else {
@@ -27,24 +27,23 @@
 
 %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
     </head>
     <body>
         <%=msg%>
         <br/>
         <form name="formRedefinirSenhaAlu" action="redefinirSenhaAlu.jsp" method="post">
-            <h2>Redefini√ß√£o de Senha</h2>
+            <h2>RedefiniÁ„o de Senha</h2>
             <br/><br/>
             Insira aqui seu login:
             <br/><br/>
             <input name="login" placeholder="insira aqui seu login" type="text" maxlength="50" size="50">
             <br/><br/>
-            <input type="submit" value="Pr√≥ximo">
+            <input type="submit" value="PrÛximo">
         </form>
     </body>
 </html>

@@ -1,9 +1,9 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
         <style>
             .texto{margin-right:200px;                
                 margin-left:200px;
@@ -23,21 +23,21 @@
         </style>
     </head>
     <body>
-        <div style="text-align:right"><a href="glossario.jsp" target="_blank">Gloss√°rio</a></div>                
+        <div style="text-align:right"><a href="glossario.jsp" target="_blank">Gloss·rio</a></div>                
         <br/>
         <div style="text-align:right"><a href="biblioteca.jsp" target="_blank">Biblioteca</a></div>  
         <div class="titulo">
-            <b><u>DIVIS√ÉO CELULAR:</u></b>        
+            <b><u>DIVIS√O CELULAR:</u></b>        
         </div>      
         <br/><br/>
         
         <div class="subtitulo">
-            <b><u>Defini√ß√£o:</u></b>
+            <b><u>DefiniÁ„o:</u></b>
         </div>
         <br/>
         
         <div class="texto">
-	Processo no qual uma c√©lula se divide originando duas c√©lulas.
+	Processo no qual uma cÈlula se divide originando duas cÈlulas.
         </div>
         <br/><br/>
         
@@ -47,9 +47,9 @@
         <br/>
         
         <div class="texto">
-	Nos seres vivos unicelulares, a divis√£o celular ocorre para sua reprodu√ß√£o. 
-        J√° nos pluricelulares, √© respons√°vel pelo crescimento e reparo. O reparo 
-        constitui a reposi√ß√£o das c√©lulas que morrem no decorrer da vida dos seres pluricelulares.
+	Nos seres vivos unicelulares, a divis„o celular ocorre para sua reproduÁ„o. 
+        J· nos pluricelulares, È respons·vel pelo crescimento e reparo. O reparo 
+        constitui a reposiÁ„o das cÈlulas que morrem no decorrer da vida dos seres pluricelulares.
         </div>        
         <br/><br/>
         
@@ -59,9 +59,9 @@
         <br/>
         
         <div class="texto">
-            Ocorre quando h√° um <span style="color:red"><u><b>sinal reprodutivo</b></u></span>, que pode ter origem dentro ou fora da 
-        c√©lula ou do organismo. Ex: horm√¥nios (dentre do organismo) ou disponibilidade 
-        de alimento (fora da c√©lula).
+            Ocorre quando h· um <span style="color:red"><u><b>sinal reprodutivo</b></u></span>, que pode ter origem dentro ou fora da 
+        cÈlula ou do organismo. Ex: hormÙnios (dentre do organismo) ou disponibilidade 
+        de alimento (fora da cÈlula).
         </div>        
         <br/><br/>
         
@@ -71,14 +71,14 @@
         <br/>
         
         <div class="texto">
-	Ap√≥s o sinal reprodutivo, ocorre a duplica√ß√£o do material gen√©tico (√°cido desoxirribonucleico, o DNA)
-        e de outros componentes vitais da c√©lula para que as duas novas c√©lulas contenham genes id√™nticos 
-        e fun√ß√µes celulares completas. Em seguida, h√° a segrega√ß√£o do DNA duplicado, ou seja, ele √© distribu√≠do 
-        de forma homog√™nea para as duas novas c√©lulas. Por fim, acontece a <span style="color:red"><u><b>citocinese</b></u></span>, divis√£o do citoplasma,
-        originando duas c√©lulas independentes.
+	ApÛs o sinal reprodutivo, ocorre a duplicaÁ„o do material genÈtico (·cido desoxirribonucleico, o DNA)
+        e de outros componentes vitais da cÈlula para que as duas novas cÈlulas contenham genes idÍnticos 
+        e funÁıes celulares completas. Em seguida, h· a segregaÁ„o do DNA duplicado, ou seja, ele È distribuÌdo 
+        de forma homogÍnea para as duas novas cÈlulas. Por fim, acontece a <span style="color:red"><u><b>citocinese</b></u></span>, divis„o do citoplasma,
+        originando duas cÈlulas independentes.
         </div>        
         <br/><br/>
         
-        <a href="frameset.jsp"><div class="subtitulo">C√âLULA</div></a>
+        <a href="frameset.jsp"><div class="subtitulo">C…LULA</div></a>
     </body>
 </html>

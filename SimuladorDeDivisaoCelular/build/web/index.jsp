@@ -18,7 +18,7 @@
         List<Professor> listaProf = profDAO.listar();
 
         if (listaProf.isEmpty() && listaAlu.isEmpty()) {
-            mensagem = "Ainda n√£o h√° nenhum usu√°rio cadastrado.";
+            mensagem = "Ainda n„o h· nenhum usu·rio cadastrado.";
         } else {
             
             if (listaProf.size() == 0) {
@@ -63,6 +63,7 @@
                         } else {
                             mensagem = "Login efetuado com sucesso.";    
                             response.sendRedirect("preTeste.jsp");
+                            session.setAttribute("Aluno", alu);
                         }
                     } else {
                         existeAlu=false;
@@ -71,7 +72,7 @@
             }
             
             if(existeAlu == false && existeProf == false){
-                mensagem = "Esse login n√£o existe. Cadastre-se j√°.";
+                mensagem = "Esse login n„o existe. Cadastre-se j·.";
             }
             
         }
@@ -81,12 +82,11 @@
     }
 %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
         <style type="text/css">
             a{	
                 text-decoration:none;

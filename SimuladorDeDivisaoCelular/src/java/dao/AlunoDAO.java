@@ -22,9 +22,9 @@ public class AlunoDAO {
             aluno.setSenha(res.getString("senhaAlu"));
             aluno.setNome(res.getString("nomeAlu"));
             aluno.setEmail(res.getString("emailAlu"));
-            aluno.setAcertosTotPt(res.getInt("acertospt"));
-            aluno.setAcertosTotAt(res.getInt("acertosat"));
-            aluno.setAcertosTotRv(res.getInt("acertosrv"));
+            aluno.setAcertosTotPt(res.getInt("acertostotpt"));
+            aluno.setAcertosTotAt(res.getInt("acertostotat"));
+            aluno.setAcertosTotRv(res.getInt("acertostotrv"));
         } catch (SQLException ex) {
             Logger.getLogger(AlunoDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -94,5 +94,37 @@ public class AlunoDAO {
         }
         return aluno;
     }
-
+    
+    public Aluno atualizar(Aluno aluno) {  
+        String sql = "UPDATE aluno SET nomeAlu = ?, senhaAlu = ?, emailAlu = ? WHERE loginAlu = ?";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            pst.setString(1, aluno.getNome());
+            pst.setString(2, aluno.getSenha());
+            pst.setString(3, aluno.getEmail());
+            pst.setString(4, aluno.getLogin());
+            
+            pst.executeUpdate();
+                       
+        } catch (Exception ex) {
+            ex.printStackTrace();
+           aluno = null;
+        }
+        return aluno;
+    }
+    
+    public Boolean excluir(Aluno aluno) {
+        Boolean retorno;
+        String sql = "DELETE FROM aluno WHERE loginAlu = ?";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            pst.setString(1, aluno.getLogin());
+            pst.executeUpdate();
+            retorno = true;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            retorno = false;
+        }
+        return retorno;
+    }
 }

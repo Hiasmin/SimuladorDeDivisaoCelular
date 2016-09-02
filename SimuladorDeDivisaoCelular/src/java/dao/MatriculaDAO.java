@@ -66,4 +66,18 @@ public class MatriculaDAO {
         return mat;
     }
     
+    public Matricula atualizarTur(Matricula matricula) {        
+        String sql = "UPDATE matricula SET idTurma = ? WHERE idMat = ?";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            pst.setLong(1, matricula.getTurma().getId());
+            pst.setLong(2, matricula.getId());
+            pst.executeUpdate();           
+        } catch (Exception ex) {
+            ex.printStackTrace();     
+            matricula = null;
+        }
+        return matricula;
+    }
+    
 }

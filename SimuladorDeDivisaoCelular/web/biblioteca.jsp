@@ -1,9 +1,9 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de DivisÃ£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divisão Celular</title>
         <style>
             .texto{margin-right:200px;                
                    margin-left:200px;
@@ -32,11 +32,11 @@
                 <u><b>            
                     <a href="http://www2.ibb.unesp.br/Museu_Escola/4_diversidade/alimentacao/Documentos/2.do_que_somos_feitos.htm"
                         target="_blank">
-                        AlimentaÃ§Ã£o: comportamento e fisiologia - Do que somos feitos? (UNESP)
+                        Alimentação: comportamento e fisiologia - Do que somos feitos? (UNESP)
                     </a>
                 </b></u>
                         <div class="texto">
-                            Tendo os seres vivos das mais variadas formas e hÃ¡bitos, compartilham propriedades comuns. A teoria da evoluÃ§Ã£o sobre as espÃ©cies sugere que todos os seres viventes (e os extintos) descendem de um mesmo ancestral. Essa idÃ©ia implica que nÃ³s e os outros seres vivos, possuÃ­mos algo em comum mas o quÃª?
+                            Tendo os seres vivos das mais variadas formas e hábitos, compartilham propriedades comuns. A teoria da evolução sobre as espécies sugere que todos os seres viventes (e os extintos) descendem de um mesmo ancestral. Essa idéia implica que nós e os outros seres vivos, possuímos algo em comum mas o quê?
                         </div>
                         <br/>
                         <br/>
@@ -50,7 +50,7 @@
                     </a>
                 </b></u>
                         <div class="texto">
-                            O que mantÃ©m a estabilidade do material genÃ©tico de geraÃ§Ã£o em geraÃ§Ã£o? Por cerca de 60 anos, a ciÃªncia buscou a resposta para essa pergunta aparentemente simples, mas com importantes conseqÃ¼Ãªncias. Ela foi encontrada na extremidade dos cromossomos, em um trecho de DNA que pode ser comparado Ã  fita plÃ¡stica que sela as pontas dos cadarÃ§os de um sapato. Esse trecho, que ganhou o nome de telÃ´mero, tornou-se desde sua descoberta o foco de atenÃ§Ã£o de uma das Ã¡reas mais instigantes da pesquisa biolÃ³gica.
+                            O que mantém a estabilidade do material genético de geração em geração? Por cerca de 60 anos, a ciência buscou a resposta para essa pergunta aparentemente simples, mas com importantes conseqüências. Ela foi encontrada na extremidade dos cromossomos, em um trecho de DNA que pode ser comparado à fita plástica que sela as pontas dos cadarços de um sapato. Esse trecho, que ganhou o nome de telômero, tornou-se desde sua descoberta o foco de atenção de uma das áreas mais instigantes da pesquisa biológica.
                         </div>
                         <br/>
                         <br/>
@@ -64,7 +64,7 @@
                     </a>
                 </b></u>
                         <div class="texto">
-                            Experimento com proteÃ­na ligada Ã  divisÃ£o celular prolonga a vida de camundongos e os protege contra o cÃ¢ncer. Stevens Rehen comemora o feito na sua coluna. Afinal, quem nÃ£o gostaria de ter acesso a esses benefÃ­cios?
+                            Experimento com proteína ligada à divisão celular prolonga a vida de camundongos e os protege contra o câncer. Stevens Rehen comemora o feito na sua coluna. Afinal, quem não gostaria de ter acesso a esses benefícios?
                         </div>
                         <br/>
                         <br/>  

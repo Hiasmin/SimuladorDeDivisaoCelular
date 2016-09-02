@@ -11,6 +11,7 @@
     Boolean retorno = false;
     Professor prof = new Professor();
     Boolean usuarioExistente = false;
+    Boolean emailExistente = false;
     if (request.getParameter("login") != null 
             && request.getParameter("senha") != null
             && request.getParameter("nome") != null           
@@ -38,7 +39,17 @@
                 }
             }
 
-            if (usuarioExistente == false) {
+            for (int y = 0; y < alunos.size(); y++) {
+                for (int i = 0; i < profs.size(); i++) {
+                    if (request.getParameter("email").equals(alunos.get(y).getEmail())
+                            || request.getParameter("email").equals(profs.get(i).getEmail())) {
+                        msg = "Já tem um usuário com esse email, por favor, tente outro.";
+                        emailExistente = true;
+                    }
+                }
+            }
+
+            if (usuarioExistente == false && emailExistente == false) {
 
                 prof = new Professor();
                 prof.setLogin(request.getParameter("login"));
@@ -70,7 +81,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
         <title>Simulador de Divisão Celular</title>
     </head>
     <body>

@@ -1,12 +1,11 @@
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
     </head>
     <body>
-        <div style="text-align:right"><a href="cadastrarTurmas.jsp" target="_self">Cadastrar Turmas</a></div> 
+        <div style="text-align:right"><a href="turmas.jsp" target="_self">Turmas</a></div> 
     </body>
 </html>

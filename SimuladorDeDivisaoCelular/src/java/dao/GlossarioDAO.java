@@ -31,6 +31,7 @@ public class GlossarioDAO {
     public List<Glossario> pesquisar(String pesquisa) {
         List<Glossario> lista = new ArrayList<Glossario>();
         String sql = "select * from glossario where palavraGlos ilike '%" + pesquisa + "%' order by palavraGlos";
+        System.out.println(sql);
         PreparedStatement pst = Conexao.getPreparedStatement(sql);
         try {
             ResultSet res = pst.executeQuery();

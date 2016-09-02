@@ -10,7 +10,6 @@
 <%@page import="java.util.List"%>
 <%@page import="dao.AlunoDAO"%>
 <%@page import="modelo.Aluno"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%    
     String msg = "";
@@ -18,10 +17,11 @@
     Boolean retornoMatricula = false;
     
     Boolean usuarioExistente = false;
+    Boolean emailExistente = false;
     Aluno alu = new Aluno();
     AlunoDAO aluDAO = new AlunoDAO();
     ProfessorDAO profDAO = new ProfessorDAO();
-    List<Aluno> alunos = aluDAO.listar();
+    List<Aluno> alunos = aluDAO.listar();   
     List<Professor> profs = profDAO.listar();
     
     if (request.getParameter("login") != null 
@@ -34,13 +34,23 @@
                 for (int i = 0; i < profs.size(); i++) {
                     if (request.getParameter("login").equals(alunos.get(y).getLogin())
                             || request.getParameter("login").equals(profs.get(i).getLogin())) {
-                        msg = "J√° tem um usu√°rio com esse login, por favor, tente outro";
+                        msg = "J· tem um usu·rio com esse login, por favor, tente outro";
                         usuarioExistente = true;
                     }
-                }
+                }                
+            }
+            
+            for (int y = 0; y < alunos.size(); y++) {
+                for (int i = 0; i < profs.size(); i++) {
+                    if (request.getParameter("email").equals(alunos.get(y).getEmail())
+                            || request.getParameter("email").equals(profs.get(i).getEmail())) {
+                        msg = "J· tem um usu·rio com esse login, por favor, tente outro";
+                        emailExistente = true;
+                    }
+                }                
             }
                     
-            if (usuarioExistente == false) {
+            if (usuarioExistente == false && emailExistente == false) {
 
                 alu.setLogin(request.getParameter("login"));
                 alu.setSenha(request.getParameter("senha"));
@@ -63,7 +73,7 @@
                     }
                 }
                     
-                   //cadastrar o alunno atrav√©s da matr√≠cula (turma+aluno)
+                   //cadastrar o alunno atravÈs da matrÌcula (turma+aluno)
                     
                     Matricula matricula = new Matricula();
                     MatriculaDAO matriculaDAO = new MatriculaDAO();
@@ -71,11 +81,8 @@
                     matricula.setAluno(alu);
                     matricula.setTurma(turma);
                     
-                    retornoMatricula = matriculaDAO.inserirMat(matricula);
-                    
-                }
-                
-
+                    retornoMatricula = matriculaDAO.inserirMat(matricula);                    
+                }                
             }
         
         if (retornoAluno == true && retornoMatricula == true) {
@@ -95,8 +102,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulador de Divis√£o Celular</title>
+        <meta charset="UTF-8">
+        <title>Simulador de Divis„o Celular</title>
     </head>
     <body>
         <%=msg%>
@@ -129,7 +136,7 @@
                         TurmaDAO turmaDAO = new TurmaDAO();
                         turmas = turmaDAO.listar();
                         if (turmas.isEmpty()) {
-                            msg = "Ainda n√£o h√° nenhuma turma cadstrada, informe seu professor.";
+                            msg = "Ainda n„o h· nenhuma turma cadstrada, informe seu professor.";
                         } else {
                             int x;                                                            
                             Long idTurmaSelecionada = null;
@@ -147,6 +154,7 @@
                     %>
                 </select>
                 <br/>
+                imagem teste<input name="arquivo" type="file">
                 <br/>
                 <div>
                     <input type="submit" value="Cadastrar" />

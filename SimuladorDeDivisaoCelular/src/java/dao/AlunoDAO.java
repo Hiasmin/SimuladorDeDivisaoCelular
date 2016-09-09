@@ -50,7 +50,7 @@ public class AlunoDAO {
     }
 
     public List<Aluno> listar() {
-        List<Aluno> lista = new ArrayList();
+        List<Aluno> lista = new ArrayList<Aluno>();
         String sql = "select * from aluno";
         PreparedStatement pst = Conexao.getPreparedStatement(sql);
         try {
@@ -113,12 +113,11 @@ public class AlunoDAO {
         return aluno;
     }
     
-    public Boolean excluir(Aluno aluno) {
+    public Boolean excluir(String login) {
         Boolean retorno;
-        String sql = "DELETE FROM aluno WHERE loginAlu = ?";
+        String sql = "DELETE FROM aluno WHERE loginAlu = '"+login+"'";
         PreparedStatement pst = Conexao.getPreparedStatement(sql);
-        try {
-            pst.setString(1, aluno.getLogin());
+        try {            
             pst.executeUpdate();
             retorno = true;
         } catch (Exception ex) {

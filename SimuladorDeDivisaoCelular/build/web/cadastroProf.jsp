@@ -18,11 +18,8 @@
             && request.getParameter("formacao") != null
             && request.getParameter("email") != null
             && request.getParameter("formacao") != null) {
-        String form;
-        form = request.getParameter("formacao");
-        if (form.equals("Mestrado") || form.equals("Doutorado") && request.getParameter("MouD") == null) {
-            
-        } else {
+        String form = request.getParameter("formacao");
+        
             AlunoDAO aluDAO = new AlunoDAO();
             ProfessorDAO profDAO = new ProfessorDAO();
 
@@ -56,7 +53,16 @@
                 prof.setSenha(request.getParameter("senha"));
                 prof.setNome(request.getParameter("nome"));                
                 prof.setFormacao(request.getParameter("formacao"));
-                prof.setMouD(request.getParameter("MouD"));
+                
+                if (form.equals("Mestrado") || form.equals("Doutorado")) {
+                    if(request.getParameter("MouD").equals("")){
+                        msg = "Preencha todos os campos";
+                        return;
+                    } else {
+                        prof.setMouD(request.getParameter("MouD"));
+                    }
+                }
+                                
                 prof.setEmail(request.getParameter("email"));
 
                 profDAO = new ProfessorDAO();
@@ -65,17 +71,15 @@
                 if (retorno == true) {
                     msg = "Registro realizados com sucesso";
                     session.setAttribute("Professor", prof);
-                    response.sendRedirect("tabelaAlunos.jsp"); // link para cadastrar TURMA nessa página
+                    response.sendRedirect("tabelaAlunos.jsp"); 
                 } else {
                     msg = "Erro";
                 }
 
             }
-        }
-
-    } else {
+        } else {
         msg = "Preencha todos os campos.";
-    }
+        }
 %>
 
 <!DOCTYPE html>
@@ -144,8 +148,8 @@
             </div>
             <br/>        
             <div>
-                <input type="submit" value="Cadastrar" />
-                <input type="reset" value="Limpar" />
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
             </div>
         </form>  
     </body>

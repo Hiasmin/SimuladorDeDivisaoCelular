@@ -96,6 +96,40 @@ public class ProfessorDAO {
         }
         return professor;
     }        
-
+    
+    public Boolean excluir(String login) {
+        Boolean retorno;
+        String sql = "DELETE FROM professor WHERE loginProf = '"+login+"'";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {            
+            pst.executeUpdate();
+            retorno = true;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            retorno = false;
+        }
+        return retorno;
+    }
+    
+    public Professor atualizar(Professor professor) {  
+        String sql = "UPDATE professor SET nomeProf = ?, senhaProf = ?, emailProf = ?, formacaoProf = ?,"
+                + "MouDProf = ? WHERE loginProf = ?";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            pst.setString(1, professor.getNome());
+            pst.setString(2, professor.getSenha());
+            pst.setString(3, professor.getEmail());            
+            pst.setString(4, professor.getFormacao());
+            pst.setString(5, professor.getMouD());
+            pst.setString(6, professor.getLogin());
+            
+            pst.executeUpdate();
+                       
+        } catch (Exception ex) {
+            ex.printStackTrace();
+           professor = null;
+        }
+        return professor;
+    }
 }
 

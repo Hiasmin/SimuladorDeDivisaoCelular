@@ -13,27 +13,22 @@
 <%@page import="modelo.Turma"%>
 <%
     String periodo, msg = "";
-    Boolean excluido = false;
     TurmaDAO tDAO = new TurmaDAO();
 
     Turma turma = new Turma();
 
     if (request.getParameter("excluirId") != null) {
 
-        turma = (Turma) tDAO.findById(Long.parseLong(request.getParameter("excluirId").toString()));
-
-        excluido = tDAO.excluir(turma);
-        if (excluido == true) {    
-        response.sendRedirect("turmas.jsp");
-        return;
+        Boolean excluido = tDAO.excluir(Long.parseLong(request.getParameter("excluirId")));
+        
+        if (excluido == true) {
+            response.sendRedirect("turmas.jsp");
+            return;
+        }
     }
-    }
+    
+    
 
-    
-    
-    
-    
-    
     if (request.getParameter("idTurma") != null) {
         turma = (Turma) tDAO.findById(Long.parseLong(request.getParameter("idTurma").toString()));
     } else {
@@ -65,7 +60,7 @@
         <form name="formAlterarTurmas" action="manterTurma.jsp" method="post">
             <%=msg%><br/>
             <h2>Alterar turma</h2>   
-            <input name="id" type="text" value="<%=turma.getId()%>" readonly> 
+            <input type="text" value="<%=turma.getId()%>" readonly> 
             <br/>
             Período:
             <input name="periodoTur" type="text" value="<%=periodo%>" maxlength="150" size="50"> 

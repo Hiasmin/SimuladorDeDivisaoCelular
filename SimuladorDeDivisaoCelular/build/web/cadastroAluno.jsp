@@ -21,15 +21,15 @@
     Aluno alu = new Aluno();
     AlunoDAO aluDAO = new AlunoDAO();
     ProfessorDAO profDAO = new ProfessorDAO();
-    List<Aluno> alunos = aluDAO.listar();   
-    List<Professor> profs = profDAO.listar();
-    
+   
     if (request.getParameter("login") != null 
             && request.getParameter("senha") != null
             && request.getParameter("nome") != null           
             && request.getParameter("email") != null
             && request.getParameter("turma") != "Selecione") {      
-
+        List<Aluno> alunos = aluDAO.listar();   
+        List<Professor> profs = profDAO.listar();
+    
             for (int y = 0; y < alunos.size(); y++) {
                 for (int i = 0; i < profs.size(); i++) {
                     if (request.getParameter("login").equals(alunos.get(y).getLogin())
@@ -128,8 +128,8 @@
                 </div>
                 <br/>                                
                 <br/>              
-                <select name="turma">
-                    Turma:
+                Turma:
+                <select name="turma">                    
                     <option value="">Selecione</option>    
                     <%
                         List<Turma> turmas = new ArrayList<Turma>();
@@ -153,8 +153,7 @@
                         }
                     %>
                 </select>
-                <br/>
-                imagem teste<input name="arquivo" type="file">
+                <br/>               
                 <br/>
                 <div>
                     <input type="submit" value="Cadastrar" />

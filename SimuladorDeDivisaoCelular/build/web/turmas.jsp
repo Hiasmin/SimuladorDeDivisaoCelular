@@ -10,8 +10,8 @@
 <%@page import="modelo.Professor"%>
 <%
     Professor prof = new Professor();
-    if (session.getAttribute("Prof") != null) {
-        prof = (Professor) session.getAttribute("Prof");
+    if (session.getAttribute("Professor") != null) {
+        prof = (Professor) session.getAttribute("Professor");
     } else {
         response.sendRedirect("index.jsp");
     }

@@ -37,7 +37,7 @@
                         } else {
                             mensagem = "Login efetuado com sucesso.";
                             response.sendRedirect("tabelaAlunos.jsp");
-                            session.setAttribute("Prof", prof);
+                            session.setAttribute("Professor", prof);
                         }
                     } else { 
                         existeProf=false;

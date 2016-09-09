@@ -118,12 +118,11 @@ public class TurmaDAO {
         return turma;
     }
     
-      public Boolean excluir(Turma turma) {
+      public Boolean excluir(Long id) {
         Boolean retorno;
-        String sql = "DELETE FROM turma WHERE idTurma = ?";
+        String sql = "DELETE FROM turma WHERE idTurma = "+id+"";
         PreparedStatement pst = Conexao.getPreparedStatement(sql);
-        try {
-            pst.setLong(1, turma.getId());
+        try {            
             pst.executeUpdate();
             retorno = true;
         } catch (Exception ex) {

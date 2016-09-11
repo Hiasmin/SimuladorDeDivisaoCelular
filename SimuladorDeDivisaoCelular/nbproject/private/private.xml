@@ -6,6 +6,7 @@
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/redefinirSenha.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/cadastroProf.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/redefinirSenhaAlu.jsp</file>
+            <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/src/java/dao/MatriculaDAO.java</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/index.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/src/java/dao/TurmaDAO.java</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/tabelaAlunos.jsp</file>
@@ -18,13 +19,12 @@
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/src/java/dao/GlossarioDAO.java</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/celula.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/simulador.jsp</file>
-            <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/manterTurma.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/cadastros.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/cadastroAluno.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/infoCelula.jsp</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/src/java/dao/ProfessorDAO.java</file>
             <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/biblioteca.jsp</file>
-            <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/web/minhaContaProf.jsp</file>
+            <file>file:/C:/Users/Lais%20Acosta/Documents/NetBeansProjects/SimuladorDeDivisaoCelular/src/java/modelo/Aluno.java</file>
         </group>
     </open-files>
 </project-private>

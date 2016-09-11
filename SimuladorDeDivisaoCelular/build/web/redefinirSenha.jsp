@@ -7,6 +7,7 @@
         <title>Simulador de Divisão Celular</title>
     </head>
     <body>
+        Essa tela se transformará no envio do email
         <h2>Redefinição de Senha</h2>
         <br/>
         <a href="redefinirSenhaProf.jsp" target="_self">Sou professor</a>

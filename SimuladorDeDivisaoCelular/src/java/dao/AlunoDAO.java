@@ -24,7 +24,7 @@ public class AlunoDAO {
             aluno.setEmail(res.getString("emailAlu"));
             aluno.setAcertosTotPt(res.getInt("acertostotpt"));
             aluno.setAcertosTotAt(res.getInt("acertostotat"));
-            aluno.setAcertosTotRv(res.getInt("acertostotrv"));
+            aluno.setAcertosTotAt2(res.getInt("acertostotAt2"));
         } catch (SQLException ex) {
             Logger.getLogger(AlunoDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -63,7 +63,7 @@ public class AlunoDAO {
                 aluno.setEmail(res.getString("emailAlu"));
                 aluno.setAcertosTotPt(res.getInt("acertosTotPt"));
                 aluno.setAcertosTotAt(res.getInt("acertosTotAt"));
-                aluno.setAcertosTotRv(res.getInt("acertosTotRv"));
+                aluno.setAcertosTotAt2(res.getInt("acertosTotAt2"));
                 lista.add(aluno);
             }
         } catch (SQLException ex) {
@@ -88,7 +88,7 @@ public class AlunoDAO {
                 aluno.setEmail(res.getString("emailAlu"));
                 aluno.setAcertosTotPt(res.getInt("acertosTotPt"));
                 aluno.setAcertosTotAt(res.getInt("acertosTotAt"));
-                aluno.setAcertosTotRv(res.getInt("acertosTotRv"));
+                aluno.setAcertosTotAt2(res.getInt("acertosTotAt2"));
             }
         } catch (Exception e) {
         }

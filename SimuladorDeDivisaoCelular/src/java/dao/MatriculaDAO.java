@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import modelo.Aluno;
 import modelo.Matricula;
+import modelo.Turma;
 
 public class MatriculaDAO {   
     
@@ -80,4 +82,21 @@ public class MatriculaDAO {
         return matricula;
     }
     
+     
+    public List<Aluno> listarAlunosDaTurma(Turma turma) {
+        List<Aluno> lista = new ArrayList<Aluno>();
+        String sql = "select * from matricula where idTurma = "+turma.getId();
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            ResultSet res = pst.executeQuery();
+            while (res.next()) {                
+                AlunoDAO aDAO = new AlunoDAO();
+                Aluno aluno = aDAO.findByLogin(res.getString("loginAlu"));
+                lista.add(aluno);                
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return lista;
+    }
 }

@@ -131,4 +131,28 @@ public class TurmaDAO {
         }
         return retorno;
     }
+      
+       
+    public List<Turma> listarTurmasProf(Professor prof) {
+        List<Turma> lista = new ArrayList<Turma>();
+        String sql = "select * from turma where loginProf = '"+prof.getLogin()+"'";
+        PreparedStatement pst = Conexao.getPreparedStatement(sql);
+        try {
+            ResultSet res = pst.executeQuery();
+            while (res.next()) {
+                Turma turma = new Turma();
+                turma.setId(res.getLong("idTurma"));               
+                turma.setProfessor(prof);
+                turma.setCurso(res.getString("cursoTur"));
+                turma.setPeriodo(res.getString("periodoTur"));
+                turma.setDisciplina(res.getString("disciplinaTur"));
+                turma.setEscola(res.getString("escolaTur"));
+                turma.setNivelEnsino(res.getString("nivelEnsinoTur"));
+                lista.add(turma);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return lista;
+    }
 }

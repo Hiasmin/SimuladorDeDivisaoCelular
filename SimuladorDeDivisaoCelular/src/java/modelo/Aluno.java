@@ -9,7 +9,7 @@ public class Aluno {
     private String email;
     private Integer acertosTotPt;
     private Integer acertosTotAt;
-    private Integer acertosTotRv;
+    private Integer acertosTotAt2;
 
     public String getLogin() {
         return login;
@@ -59,12 +59,12 @@ public class Aluno {
         this.acertosTotAt = acertosTotAt;
     }
 
-    public Integer getAcertosTotRv() {
-        return acertosTotRv;
+    public Integer getAcertosTotAt2() {
+        return acertosTotAt2;
     }
 
-    public void setAcertosTotRv(Integer acertosTotRv) {
-        this.acertosTotRv = acertosTotRv;
+    public void setAcertosTotAt2(Integer acertosTotAt2) {
+        this.acertosTotAt2 = acertosTotAt2;
     }
 
 }

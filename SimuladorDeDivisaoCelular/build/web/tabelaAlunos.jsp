@@ -30,12 +30,19 @@
         <br/>
         <div style="text-align:right"><a href="turmas.jsp" target="_self">Turmas</a></div> 
         
-        <table border="1">
-            
+       
+        <%
+            if(turmas.isEmpty()){
+                %>
+                <tr>Você ainda não possui nenhuma turma cadastrada.</tr>
+                <%
+            } else { 
+        %>
+         <table border="1">
             <tr>
                 <th>Alunos</th>            
             </tr>
-        <%
+        <%            
             for(int x = 0; x < turmas.size(); x++){   
                 String turmaDesc = " " + turmas.get(x).getEscola() + " - " + turmas.get(x).getCurso() + " - " + turmas.get(x).getDisciplina()
                         + " - " + turmas.get(x).getNivelEnsino() + " - " + turmas.get(x).getPeriodo();
@@ -51,6 +58,11 @@
                     </tr>
                 <%
                 List<Aluno> alunos = mDAO.listarAlunosDaTurma(turmas.get(x));
+                if(alunos.isEmpty()){
+                    %>
+                    <tr><td>Você ainda não possui nenhum aluno cadastrado.</td></tr>
+                    <%
+                } else {
                 for(int y = 0; y < alunos.size(); y++){
                     String nome = alunos.get(y).getNome();
                     Integer ac1 = alunos.get(y).getAcertosTotPt();
@@ -65,7 +77,9 @@
                     </tr>                    
                 <%
                 }
-            }                   
+                }
+            }
+            }
         %>
         </table>
     </body>

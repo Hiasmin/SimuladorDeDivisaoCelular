@@ -1,8 +1,4 @@
-<%-- 
-    Document   : turmas
-    Created on : 21/08/2016, 20:33:45
-    Author     : Hiasmin Acosta Alves
---%>
+
 <%@page import="dao.TurmaDAO"%>
 <%@page import="modelo.Turma"%>
 <%@page import="java.util.List"%>
@@ -17,7 +13,7 @@
     }
     List<Turma> turmasProfX = new ArrayList<Turma>();
     TurmaDAO tDAO = new TurmaDAO();
-    turmasProfX = tDAO.listarProfX(prof);    
+    turmasProfX = tDAO.listarTurmasProf(prof);    
     session.setAttribute("Prof", prof);
     Turma turma = new Turma();
 %>

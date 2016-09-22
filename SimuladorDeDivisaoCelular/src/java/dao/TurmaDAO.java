@@ -80,30 +80,6 @@ public class TurmaDAO {
         return lista;
     }
     
-    public List<Turma> listarProfX(Professor prof) {
-        List<Turma> lista = new ArrayList<Turma>();
-        String sql = "select * from turma where loginProf = ?";
-        PreparedStatement pst = Conexao.getPreparedStatement(sql);
-        try {
-            pst.setString(1, prof.getLogin());
-            ResultSet res = pst.executeQuery();
-            while (res.next()) {
-                Turma turma = new Turma();
-                turma.setId(res.getLong("idTurma"));               
-                turma.setProfessor(profDAO.findByLogin(res.getString("loginProf")));
-                turma.setCurso(res.getString("cursoTur"));
-                turma.setPeriodo(res.getString("periodoTur"));
-                turma.setDisciplina(res.getString("disciplinaTur"));
-                turma.setEscola(res.getString("escolaTur"));
-                turma.setNivelEnsino(res.getString("nivelEnsinoTur"));
-                lista.add(turma);
-            }            
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        return lista;
-    }
-    
     public Turma atualizar(Turma turma) {        
         String sql = "UPDATE turma SET periodoTur = ? WHERE idTurma = ?";
         PreparedStatement pst = Conexao.getPreparedStatement(sql);

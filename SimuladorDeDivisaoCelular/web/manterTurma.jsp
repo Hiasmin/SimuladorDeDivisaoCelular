@@ -1,8 +1,3 @@
-<%-- 
-    Document   : manterTurma
-    Created on : 21/08/2016, 20:58:59
-    Author     : Hiasmin Acosta Alves
---%>
 
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>

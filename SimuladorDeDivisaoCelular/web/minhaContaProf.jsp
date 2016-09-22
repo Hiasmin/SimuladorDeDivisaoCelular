@@ -34,19 +34,19 @@
     String formacaoProf = professor.getFormacao();
     String MouDProf = professor.getMouD();
 
-    Boolean checkedCBB = false, checkedCBL = false, checkedM = false, checkedD = false;
+    String checkedCBB="", checkedCBL="", checkedM="", checkedD="";
     String modoLABELeCAIXA = "";
     if (formacaoProf.equals("Doutorado")) {
-        checkedD = true;
+        checkedD = "checked";
         modoLABELeCAIXA = "block";
     } else if (formacaoProf.equals("Ciências Biológicas-Licenciatura")) {
-        checkedCBL = true;
+        checkedCBL = "checked";
         modoLABELeCAIXA = "none";
     } else if (formacaoProf.equals("Mestrado")) {
-        checkedM = true;
+        checkedM = "checked";
         modoLABELeCAIXA = "block";
     } else if (formacaoProf.equals("Ciências Biológicas-Bacharelado")) {
-        checkedCBB = true;
+        checkedCBB = "checked";
         modoLABELeCAIXA = "none";
     }
 
@@ -104,10 +104,10 @@
         Professor prof = profDAO.atualizar(professor);
         session.setAttribute("Professor", prof);
 
-        checkedCBB = false;
-        checkedCBL = false;
-        checkedM = false;
-        checkedD = false;
+        checkedCBB = "";
+        checkedCBL = "";
+        checkedM = "";
+        checkedD = "";
 
         if (prof != null) {
 
@@ -119,16 +119,16 @@
 
             modoLABELeCAIXA = "";
             if (formacaoProf.equals("Doutorado")) {
-                checkedD = true;
+                checkedD = "checked";
                 modoLABELeCAIXA = "block";
             } else if (formacaoProf.equals("Ciências Biológicas-Licenciatura")) {
-                checkedCBL = true;
+                checkedCBL = "checked";
                 modoLABELeCAIXA = "none";
             } else if (formacaoProf.equals("Mestrado")) {
-                checkedM = true;
+                checkedM = "checked";
                 modoLABELeCAIXA = "block";
             } else if (formacaoProf.equals("Ciências Biológicas-Bacharelado")) {
-                checkedCBB = true;
+                checkedCBB = "checked";
                 modoLABELeCAIXA = "none";
             }
 
@@ -177,8 +177,7 @@
                 <br/>
                 <div> 
                     Formação:
-                    <br/>
-                    <%if (checkedCBB == true) {%>
+                    <br/>     
 
                     <input type="radio" name="formacao" value="Ciências Biológicas-Bacharelado" onclick="
                         if (document.getElementById('caixa').style.display == 'block') {
@@ -187,7 +186,7 @@
                         if (document.getElementById('lab').style.display == 'block') {
 
                         document.getElementById('lab').style.display = 'none'
-                        }" checked/> Ciências Biológicas - Bacharelado<br/>                                                
+                        }" <%=checkedCBB%>/> Ciências Biológicas - Bacharelado<br/>                                                
 
                     <input type="radio" name="formacao" value="Ciências Biológicas-Licenciatura" onclick="
                                 if (document.getElementById('caixa').style.display == 'block') {
@@ -196,7 +195,7 @@
 
                                 if (document.getElementById('lab').style.display == 'block') {
                                 document.getElementById('lab').style.display = 'none'
-                                }"/>  Ciências Biológicas - Licenciatura<br/>
+                                }" <%=checkedCBL%>/>  Ciências Biológicas - Licenciatura<br/>
 
                     <input type="radio" name="formacao" value="Mestrado" onclick="if (document.getElementById('caixa').style.display == 'none') {
                                 document.getElementById('caixa').style.display = 'block';
@@ -204,7 +203,7 @@
 
                                 if (document.getElementById('lab').style.display == 'none') {
                                 document.getElementById('lab').style.display = 'block'
-                                }"/> Mestrado<br/>                                
+                                }" <%=checkedM%>/> Mestrado<br/>                                
 
                     <input type="radio" name="formacao" value="Doutorado" onclick="
                                 if (document.getElementById('caixa').style.display == 'none') {
@@ -212,118 +211,8 @@
                                 }
                                 if (document.getElementById('lab').style.display == 'none') {
                                 document.getElementById('lab').style.display = 'block'
-                                }"/> Doutorado<br/>
+                                }" <%=checkedD%>/> Doutorado<br/>
 
-
-                    <%} else if (checkedCBL == true) {%>
-
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Bacharelado" onclick="
-                                if (document.getElementById('caixa').style.display == 'block') {
-                                document.getElementById('caixa').style.display = 'none';
-                                }
-                                if (doc
-                                        ument.getElementById('lab').style.display == 'block') {
-                                document.getElementById('lab').style.display = 'none'
-                                }" /> Ciências Biológicas - Bacharelado<br/>                                
-
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Licenciatura" onclick="
-                                if (document.getElementById('caixa').style.display == 'block') {
-                                document.getElementById('caixa').style.display = 'none';
-                                }
-                                if (document.getElementById('lab').style.display == 'block') {
-                                document.getElementById('lab').style.display = 'none'
-                                }" checked/>  Ciências Biológicas - Licenciatura<br/>                
-
-                    <input type="radio" name="formacao" value="Mestrado" onclick="
-                                if (document.getElementById('caixa').style.display == 'none') {
-                                document.getElementById('caixa').style.display = 'b
-                                        lock';
-                                }
-                                if (document.getElementById('lab').style.display == 'none') {
-                                document.getElementById('lab').style.display = 'block'
-                                }" /> Mestrado<br/>                                
-
-                    <input type="radio" name="formacao" value="Doutorado" onclick="
-                                if (document.getElementById('caixa').style.display == 'none') {
-                                document.getElementById('caixa').style.display = 'block';
-                                }
-                                if (document.getElementById('lab').style.display == 'none') {
-                                document.getElementById('lab').style.display = 'block'                             }" /> Doutorado<br/>
-
-
-                    <%} else if (checkedM == true) {%>                
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Bacharelado" onclick="
-                                if (document.getElementById('caixa').style.display == 'block') {
-                                document.getElementById('caixa').style.display = 'none';
-                                }
-                                if (document.getElementById('lab').style.display == 'block') {
-                                document.getElementById('lab').style.display = 'none'
-                                }" /> Ciências Biológicas - Bacharelado<br/>                                
-
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Licenciatura" onclick="
-                                if (document.getElementById('caixa').style.display == 'block') {
-                                document.getElementById(
-                                        'caixa').style.display = 'none';
-                                }
-                                if (document.getElementById('lab').style.display == 'block') {
-                                document.getElementById('lab').style.display = 'none'
-                                }"/>  Ciências Biológicas - Licenciatura<br/>                
-
-                    <input type="radio" name="formacao" value="Mestrado" onclick="
-                                if (document.getElementById('caixa').style.display == 'none') {
-                                document.ge
-                                        tElementById('caixa').style.display = 'block';
-                                }
-                                if (document.getElementById('lab').style.display == 'none') {
-                                document.getElementById('lab').style.display = 'block'
-                                }" checked/> Mestrado<br/>                                
-
-                    <input type="radio" name="formacao" value="Doutorado" onclick="
-                                if (document.getElementById('caixa').style.display == 'none') {
-                                document.getElementById('caixa').style.display = 'block';
-                                }
-                                if (document.getElementById('lab').style.display == 'none') {
-                                document.getElementById('lab').style.display = 'block'
-                                }" /> Doutorado<br/>
-
-
-                    <%} else if (checkedD == true) {%>                
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Bacharelado" onclick="
-                                if (document.getElementById('caixa').style.display == 'block') {
-                                document.getElementById('cai
-                                        xa').style.display = 'none';
-                                }
-                                if (document.getElementById('lab').style.display == 'block') {
-                                document.getElementById('lab').style.display = 'none'
-                                }" /> Ciências Biológicas - Bacharelado<br/>                                
-
-                    <input type="radio" name="formacao" value="Ciências Biológicas-Licenciatura" onclick="
-                                        if (document.getElementById('caixa').style.display == 'block') {
-
-                                        document.getElementById('caixa').style.display = 'none';
-                                        }
-                                        if (document.getElementById('lab').style.display == 'block') {
-                                        document.getElementById('lab').style.display = 'none'
-                                        }"/>  Ciências Biológicas - Licenciatura<br/>                
-
-                    <input type="radio" name="formacao" value="Mestrado" onclick="
-                                        if (document.getElementById('caixa').style.display =
-                                                = 'none') {
-                                        document.getElementById('caixa').style.display = 'block';
-                                        }
-                                        if (document.getElementById('lab').style.display == 'none') {
-                                        document.getElementById('lab').style.display = 'block'
-                                        }"/> Mestrado<br/>                                
-
-                    <input type="radio" name="formacao" value="Doutorado" onclick="
-                                        if (document.getElementById('caixa').style.display == 'none') {
-                                        document.getElementById('caixa').style.display = 'block';
-                                        }
-                                        if (document.getElementById('lab').style.display == 'none') {
-                                        document.getElementById('lab').style.display = 'block'
-                                        }" checked/> Doutorado<br/>
-
-                    <%}%>      
                 </div>
                 <br/>
                 <br/> 

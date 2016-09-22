@@ -80,8 +80,7 @@ public class MatriculaDAO {
             matricula = null;
         }
         return matricula;
-    }
-    
+    }  
      
     public List<Aluno> listarAlunosDaTurma(Turma turma) {
         List<Aluno> lista = new ArrayList<Aluno>();
